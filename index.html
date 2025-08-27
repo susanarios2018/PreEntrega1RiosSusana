@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Medico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css" integrity="sha384-T5m5WERuXcjgzF8DAb7tRkByEZQGcpraRTinjpywg37AO96WoYN9+hrhDVoM6CaT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script>
+      function mostrarDesplegable() {
+    var desplegableContainer = document.getElementById("desplegable-container");
+    desplegableContainer.style.display = "block";
+      }
 
+     function cerrarDesplegable() {
+      var desplegableContainer = document.getElementById("desplegable-container");
+      desplegableContainer.style.display = "none";
+     }
+     function mostrarDesplegable2() {
+    var desplegableContainer2 = document.getElementById("desplegable-container2");
+    desplegableContainer2.style.display = "block";
+      }
+
+     function cerrarDesplegable2() {
+      var desplegableContainer2 = document.getElementById("desplegable-container2");
+      desplegableContainer2.style.display = "none";
+     }
+     function mostrarDesplegable3() {
+    var desplegableContainer3 = document.getElementById("desplegable-container3");
+    desplegableContainer3.style.display = "block";
+      }
+
+     function cerrarDesplegable3() {
+      var desplegableContainer3 = document.getElementById("desplegable-container3");
+      desplegableContainer3.style.display = "none";
+     }
+     function mostrarDesplegable4() {
+    var desplegableContainer4 = document.getElementById("desplegable-container4");
+    desplegableContainer4.style.display = "block";
+      }
+
+     function cerrarDesplegable4() {
+      var desplegableContainer4 = document.getElementById("desplegable-container4");
+      desplegableContainer4.style.display = "none";
+     }
+  </script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <header class="container-fluid bg-primary-subtle d-flex justify-content-end">
+        <p class="text-dark mb-0 p-2 fs-6">Contactanos (351)-7883911</p></header>
+        <link rel="stylesheet" href="estilos.css">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menuOpciones">
+            <div class="container">
+              <a class="navbar-brand" style="font-style: italic;font-size: 30px;"  ><b> Sanatorio LiveHeart </b></a>
+              <img src="IMAGENES/foto sanatorio.jpg" style="width:100px;height: 100px;">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-3" href="especialidades.html">Especialidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-3" href="obrasSociales.html">Obras Sociales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-3" href="turnos.html">Turnos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  class="nav-link mx-3" href="contacto.html">Contacto</a>
+                    
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="IMAGENES/IMG-CARDIO.jpg"  class="d-block w-100" alt="Especialidad cardiologia">
+              </div>
+              <div class="carousel-item ">
+                <img src="IMAGENES/img-ecografia.jpg" class="d-block w-100" alt="Diagnostico por imagenes">
+              </div>
+              <div class="carousel-item">
+                <img src="IMAGENES/img-labo.jpg" class="d-block w-100" alt="Laboratorio">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <br>
+          <br>
+          <section class="container-fluid">
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5">
+              <button class="btn btn-outline-success btn-xs mx-4" onclick="mostrarDesplegable()" type="button">Preparacion para estudios
+                <img src="IMAGENES/img-preparacion.JPG" style="width: 270px;height: 100px;" class="img-fluid mr-2">
+              </button>
+              <button class="btn btn-outline-info btn-xs mx-4" onclick="mostrarDesplegable2()" type="button">Circuito Completo
+                <img src="IMAGENES/img-circuito.JPG" style="width: 270px;height: 100px;" class="img-fluid mr-2">
+              </button>
+              <button class="btn btn-outline-danger btn-xs mx-4" onclick="mostrarDesplegable3()" type="button">Campaña de vacunación
+                <img src="IMAGENES/img-vacunas.JPG" style="width: 270px;height: 100px;" class="img-fluid mr-2">
+              </button>
+              <button class="btn btn-outline-primary btn-xs mx-4" onclick="mostrarDesplegable4()" type="button">Programa de Capacitación
+                <img src="IMAGENES/img-practicas.JPG" style="width: 270px;height: 100px;" class="img-fluid mr-2">
+              </button>
+              </div>
+          </section>
+          
+    
+    <div id="desplegable-container" class="desplegable-container" >
+      <div id="desplegable" class="desplegable" >
+      <span class="cerrar" 
+      onclick="cerrarDesplegable()">Cerrar X</span><br>
+      <!-- Contenido de la ventana desplegable -->
+      <p><strong><u>Estudios de laboratorio:</u></strong><br> Para pruebas de sangre u otros análisis de laboratorio, es posible 
+        que se requiera ayuno previo durante un período específico, generalmente de 8 a 12 horas. 
+        Se recomienda seguir las instrucciones proporcionadas por el médico o el laboratorio para 
+        obtener resultados precisos.<br><strong><u>Radiografías:</u></strong><br> En la preparación para radiografías, es importante
+         seguir las indicaciones del médico o del técnico radiólogo. Dependiendo de la parte del cuerpo 
+         que se vaya a examinar, es posible que sea necesario quitar joyas, ropa con objetos metálicos o
+          dispositivos médicos que puedan interferir con las imágenes radiográficas.<br><strong><u>Ecografías:</u></strong><br>Para los estudios de 
+          ultrasonido, generalmente no se requiere ninguna preparación especial. Sin embargo, en algunos casos,
+           puede solicitarse un ayuno previo si se va a realizar una ecografía abdominal.
+           <br><strong><u>Tomografías computarizadas (TC):</u></strong><br>Para ciertos tipos de 
+           tomografías computarizadas, es posible que se requiera un ayuno previo. Además, se puede 
+           solicitar evitar el consumo de alimentos o bebidas que contengan cafeína antes del 
+           procedimiento. Se debe informar al médico acerca de cualquier alergia a los contrastes 
+           utilizados en las tomografías computarizadas.
+           <br><strong><u>Resonancias magnéticas (RM):</u></strong><br>
+           Antes de una resonancia magnética, es importante informar al médico sobre cualquier implante 
+           metálico en el cuerpo, como marcapasos, prótesis o clips quirúrgicos. Estos dispositivos 
+           pueden ser incompatibles con el campo magnético utilizado en la resonancia magnética y pueden 
+           requerir precauciones adicionales.
+           <br><strong><u>Endoscopias:</u></strong><br>
+           Para procedimientos endoscópicos, como la endoscopia digestiva alta o la colonoscopia, se suele 
+           requerir un ayuno previo para asegurar que el tracto gastrointestinal esté vacío. Además, es posible
+            que se deban interrumpir temporalmente ciertos medicamentos, como anticoagulantes, antes de estos 
+            estudios.
+          </p>
+    </div>
+</div>
+<div class="container">
+<div id="desplegable-container2" class="desplegable-container2" >
+  <div id="desplegable2" class="desplegable2" >
+  <span class="cerrar" 
+  onclick="cerrarDesplegable2()">Cerrar X</span><br>
+  <img src="IMAGENES/circuito-web.JPG" alt="Imagen" class="img-fluid">
+</div>
+</div>
+<div class="container">
+<div id="desplegable-container3" class="desplegable-container3" >
+  <div id="desplegable3" class="desplegable3" >
+  <span class="cerrar" 
+  onclick="cerrarDesplegable3()">Cerrar X</span><br>
+  <img src="IMAGENES/vacunas-web.JPG" alt="Imagen" class="img-fluid">
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div id="desplegable-container4" class="desplegable-container4" >
+  <div id="desplegable4" class="desplegable4" >
+  <span class="cerrar" 
+  onclick="cerrarDesplegable4()">Cerrar X</span><br><br>
+  <p><strong><u>Entrega de fichas para comenzar las prácticas:</u></strong><br><br>
+
+    * Promedio general con aplazos de 7 a 10, viernes 13 de marzo a las 9hs. <br>
+    * Promedio general con aplazos de 6 o menos, lunes 16 de marzo a las 9hs. <br><br>
+    
+    <strong><u>Lugar:</u> </strong><br>Sanatorio LiveHeart<br><br>
+    
+    <strong><u>Requisitos:</u> </strong><br>
+    
+    * Finales de 1er año APROBADOS.<br>
+    * Final de Rayos I y Anatomía Topográfica APROBADOS.<br>
+    * REGULAR Farmacología y Fisiología.<br>
+    * Vacunas: 3 dosis de Hepatitis B y Anti tetánica<br>
+    * Dosaje (realizado en el laboratorio de la escuela o en la SAE de la UNC)<br><br>
+    
+    Traer Libreta e historia académica actualizada impresa.
+ 
+</p>
+</div>
+</div>
+</div>
+          <br>
+          <br>
+          <!--<div class="container animate__animated animate__rotateIn" id="encontranos">
+            <h4 class="text-center">Donde encontrarnos</h4>
+          </div>-->
+          <br>
+          <br>
+          <div class="container">
+            
+               <div id="map-container" class=" mt-8 container justify-content-center align-items-center d-flex ;" style="background-color: lightpink;">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <img class="img-fluid" src="IMAGENES/img-hospital.png" style="width: 500px;height: auto;" alt="Imagen">
+              </div> 
+                  <div class="col-sm-6">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div class="mt-4">
+                  <iframe class="embed-responsive embed-responsive-16by9" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.6140916894783!2d-64.18750852559603!3d-31.424756896653854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28fc0add5c5%3A0xfa22bc822f3eb0d8!2sItuzaing%C3%B3%20672%2C%20X5000IJN%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1682812883386!5m2!1ses!2sar" 
+          width="500" height="300" style="border:0; transform: translateX(30px);  " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  
+        <br>
+          <br>
+           
+            <br>
+          <br>
+          
+          
+
+<footer class="container-fluid">
+  <span class="border w-100 text-black mb-0 p-2 fs-6 d-flex justify-content-center" id="Copyright" >© Copyright 2023 sanatorioliveheart.com.ar</span>
+</footer>
+    </body>
+</html>
