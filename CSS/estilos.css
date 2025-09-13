@@ -148,3 +148,36 @@ p {
 u {
   color: violet;
 }
+// =======================
+// Mapa responsivo
+// =======================
+#map-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: 0;
+    display: block;
+  }
+}
+
+// Alternativa adicional si usas Bootstrap 5
+.ratio {
+  width: 100%;
+  height: auto;
+
+  iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
