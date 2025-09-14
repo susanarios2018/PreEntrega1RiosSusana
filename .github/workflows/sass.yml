@@ -1,0 +1,26 @@
+name: Compile SCSS to CSS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install Sass
+        run: npm install -g sass
+      - name: Compile SCSS
+        run: sass CSS/styles.scss CSS/styles.css
+      - name: Commit and push compiled CSS
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'CSS/styles.css'
+          message: 'Auto-compile SCSS to CSS'
