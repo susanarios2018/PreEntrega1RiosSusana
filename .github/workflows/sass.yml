@@ -19,8 +19,8 @@ jobs:
       - name: Compile SCSS
         run: npx sass CSS/estilos.scss CSS/estilos.css
 
-      - name: Commit and push compiled CSS (optional)
-        if: ${{ github.ref == 'refs/heads/main' }} 
+      - name: Commit and push compiled CSS
+        if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
