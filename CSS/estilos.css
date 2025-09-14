@@ -12,7 +12,7 @@ $fuente-secundaria: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Luci
 // Estilos generales
 // =======================
 #menuOpciones a {
-  font-size: 45px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -60,7 +60,7 @@ fieldset {
 }
 
 #navbarNav {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
 }
 
