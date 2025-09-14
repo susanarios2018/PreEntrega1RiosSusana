@@ -104,37 +104,45 @@ button {
 // =======================
 // Ventanas desplegables
 // =======================
+.section-botones {
+  position: relative; // permite que los desplegables se posicionen respecto al botón
+}
+
 .desplegable-container,
 .desplegable-container2,
 .desplegable-container3,
 .desplegable-container4 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  z-index: 9999;
+  display: none; // oculto por defecto
+  position: absolute; // relativo al botón
+  top: 100%; // justo debajo del botón
+  left: 0;
+  width: 100%; // se adapta al ancho del contenedor padre
+  max-width: 400px; // evita que crezca demasiado
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 10px;
+  overflow-y: auto; // scroll vertical si hay mucho contenido
+  overflow-x: hidden; // evita scroll horizontal
+}
 
-  // Elementos dentro de los contenedores
-  .desplegable,
-  .desplegable2,
-  .desplegable3,
-  .desplegable4 {
-    border: 1px solid black;
-    padding: 10px;
-    background-color: whitesmoke;
-    max-width: 3000px;
-    overflow: auto;
-    max-height: 400px;
-    position: relative;
-  }
+// Elementos internos
+.desplegable,
+.desplegable2,
+.desplegable3,
+.desplegable4 {
+  width: 100%; // se ajusta al contenedor
+  word-wrap: break-word;
+  word-break: break-word;
+}
 
-  .cerrar {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
-  }
+// Botón de cerrar
+.cerrar {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
 }
 
 // =======================
@@ -147,4 +155,37 @@ p {
 
 u {
   color: violet;
+}
+
+/* Contenedor de botones */
+.section-botones {
+  position: relative;
+}
+
+// =======================
+// Desplegable específico debajo del botón
+// =======================
+.desplegable-container {
+  display: none;
+  position: absolute;
+  top: 100%; /* Aparece justo debajo del botón */
+  left: 0;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 10;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+// =======================
+// Misc
+// =======================
+fieldset {
+  margin-left: 20%;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 40px;
 }
