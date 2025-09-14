@@ -1,191 +1,143 @@
-// =======================
-// Variables globales
-// =======================
-$gris: rgb(191, 189, 189);
-$gris-oscuro: #adaaaa;
-$blanco: #fff;
-$celeste: lightblue;
-$fuente-base: Arial, Helvetica, sans-serif;
-$fuente-secundaria: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-// =======================
-// Estilos generales
-// =======================
 #menuOpciones a {
-  font-size: 15px;
-  font-weight: bold;
+    font-size: 15px;
+    font-weight: bold;
+    
 }
 
-.carousel-inner {
-  max-height: 30rem;
+.carousel-inner{
+    max-height: 30rem;
 }
 
 #derechos {
-  font-size: 18px;
-  background-color: $gris;
-  margin-top: 500px;
+    font-size: 18px;
+    background-color: rgb(191, 189, 189);
+    margin-top: 500px;
 }
-
-#encontranos {
-  font-family: $fuente-base;
+#encontranos{
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
-
 fieldset {
+  
   margin-left: 20%;
   font-size: 15px;
+  
+  
   font-weight: bold;
-  margin-top: 40px;
-}
+  margin-top: 40px; 
+} 
 
-.tusdatos {
-  max-width: 300px;
-  margin-top: 80px;
-  margin-left: 30%;
-  font-weight: bold;
-  font-family: $fuente-base;
-}
-
-#select-lg,
-#OS,
-#navbarNav {
-  font-family: $fuente-base;
-}
-
-#select-lg {
+/* fieldset {
+  position: absolute;
+  
   font-size: 15px;
-}
-
-#OS {
-  font-size: 40px;
-}
-
-#navbarNav {
-  font-size: 10px;
+  
+  left: 35%;
   font-weight: bold;
+  margin-top: 40px; 
+} */
+  
+
+  .tusdatos {
+    
+    max-width: 300px;
+    margin-top: 80px;
+    
+    margin-left: 30%; 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #select-lg {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #OS{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
+  #navbarNav{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  #final {
+    background-color: rgb(191, 189, 189);
 }
 
-#final {
-  background-color: $gris;
+.form-control{
+  background-color: lightblue;
 }
-
-.form-control {
-  background-color: $celeste;
-}
-
 #Copyright {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
-  background-color: $gris-oscuro;
-  color: $blanco;
+  background-color: #adaaaa;
+  color: #fff;
   padding: 10px;
   z-index: 1;
 }
-
-// =======================
-// Botones (anidación)
-// =======================
-button {
-  &[type="submit"] {
-    max-width: 450px;
-    margin-top: 40px;
-    margin-left: 25%;
-  }
-
-  &[type="reset"] {
-    max-width: 450px;
-    margin-top: 40px;
-    left: 45%;
-  }
+button[type="submit"] {
+  max-width: 450px;
+  margin-top: 40px;
+  margin-left: 25%;
+  
+}
+button[type="reset"] {
+  max-width: 450px;
+  margin-top: 40px;
+  left: 45%;
+ 
 }
 
-// =======================
-// Ventanas desplegables
-// =======================
-.section-botones {
-  position: relative; // permite que los desplegables se posicionen respecto al botón
+/*button[id="enviarTurno"] {
+  max-width: 450px;
+  width: 80px;
+  margin-top: 40px;
+  margin-left: 470px;
+ 
+}/*
+/*button[id="limpiarTurno"] {
+  max-width: 450px;
+  width: 150px;
+  
+  margin-top: 40px;
+  margin-left: 50px;
+  
+}*/
+
+.desplegable-container,.desplegable-container2,.desplegable-container3,.desplegable-container4 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
 }
 
-.desplegable-container,
-.desplegable-container2,
-.desplegable-container3,
-.desplegable-container4 {
-  display: none; // oculto por defecto
-  position: absolute; // relativo al botón
-  top: 100%; // justo debajo del botón
-  left: 0;
-  width: 100%; // se adapta al ancho del contenedor padre
-  max-width: 400px; // evita que crezca demasiado
-  background-color: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 10;
+.desplegable,.desplegable2,.desplegable3,.desplegable4 {
+  border: 1px solid black;
   padding: 10px;
-  overflow-y: auto; // scroll vertical si hay mucho contenido
-  overflow-x: hidden; // evita scroll horizontal
+  background-color: whitesmoke;
+  max-width: 400px;
+  position: relative;
+  max-width: 3000px;
+  overflow: auto;
+  max-height: 400px; 
 }
 
-// Elementos internos
-.desplegable,
-.desplegable2,
-.desplegable3,
-.desplegable4 {
-  width: 100%; // se ajusta al contenedor
-  word-wrap: break-word;
-  word-break: break-word;
-}
-
-// Botón de cerrar
 .cerrar {
   position: absolute;
   top: 5px;
   right: 5px;
   cursor: pointer;
 }
-
-// =======================
-// Textos
-// =======================
-p {
+p{
   font-size: 15px;
-  font-family: $fuente-secundaria;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-u {
+u{
   color: violet;
-}
-
-/* Contenedor de botones */
-.section-botones {
-  position: relative;
-}
-
-// =======================
-// Desplegable específico debajo del botón
-// =======================
-.desplegable-container {
-  display: none;
-  position: absolute;
-  top: 100%; /* Aparece justo debajo del botón */
-  left: 0;
-  width: 100%;
-  max-width: 400px;
-  background-color: white;
-  border: 1px solid #ccc;
-  z-index: 10;
-  padding: 10px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-// =======================
-// Misc
-// =======================
-fieldset {
-  margin-left: 20%;
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 40px;
 }
