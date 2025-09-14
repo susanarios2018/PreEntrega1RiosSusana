@@ -18,9 +18,9 @@ jobs:
       - name: Install Sass
         run: npm install -g sass
       - name: Compile SCSS
-        run: sass CSS/styles.scss CSS/styles.css
+        run: sass CSS/estilos.scss CSS/estilos.css
       - name: Commit and push compiled CSS
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'CSS/styles.css'
+          add: 'CSS/estilos.css'
           message: 'Auto-compile SCSS to CSS'
