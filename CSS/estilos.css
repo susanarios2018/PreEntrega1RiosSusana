@@ -148,3 +148,22 @@ p {
 u {
   color: violet;
 }
+
+/* Contenedor de botones */
+.section-botones {
+  position: relative;
+}
+
+/* Desplegable */
+.desplegable-container {
+  display: none;
+  position: absolute;
+  top: 100%; /* Aparece justo debajo del botón */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 10;
+  padding: 10px;
+}
+
