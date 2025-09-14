@@ -10,13 +10,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Clonar el repo
       - uses: actions/checkout@v4
 
+      # 2️⃣ Instalar Node
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
 
+      # 3️⃣ Compilar SCSS → CSS
       - name: Compile SCSS
         run: npx sass CSS/estilos.scss CSS/estilos.css
 
-      
+      # 4️⃣ Commit y push del CSS compilado
+      - name: Commit and push compiled CSS
+        if: ${{ github.ref == 'refs/heads/main' }}
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/susanarios2018/PreEntrega1RiosSusana.git
+          git add CSS/estilos.css
+          git diff --cached --quiet || git commit -m "Auto-compile SCSS to CSS"
+          git push
